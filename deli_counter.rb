@@ -1,6 +1,6 @@
 katz_deli = [ ]
 
-def line(katz_deli = "The line is currently empty")
+def line(katz_deli)
       
       
       
