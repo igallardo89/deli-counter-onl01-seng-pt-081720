@@ -3,8 +3,8 @@ katz_deli = [ ]
 def line(queue)
   line_queue=[ ]
   if queue.length >=1
-    x.each_with_index {|person,index|
-      line_queue.push("#{index +1}. #{person}")}
+    queue.each_with_index {|human,index|
+      line_queue.push("#{index +1}. #{human}")}
       puts "The line is currently: #{line_queue.join(" ")}"
   else
     puts "The line is currently empty."
