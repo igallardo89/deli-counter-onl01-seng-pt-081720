@@ -1,6 +1,8 @@
 katz_deli = [ ]
 
-def line(que)
+def line(queue)
+  customers = [ ]
+  if queue.lenght >=1 
   
   
 
