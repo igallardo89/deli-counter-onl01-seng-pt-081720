@@ -1,16 +1,15 @@
 katz_deli = [ ]
 
+name = ["Ada", "Grace", "Kent", 'Martz']
+
 def line(queue)
   customers = [ ]
   if queue.lenght >=1 
     queue.each_with_index{|name,index| customers.push("#{index}.#{name}")
-    
-else
+ else
   "The line is currently empty."
-  
+  end
 end
-end
-
 
 def take_a_number(katz_deli, name)
   katz_deli.push(name)
