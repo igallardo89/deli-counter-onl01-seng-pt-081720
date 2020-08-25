@@ -1,8 +1,8 @@
 katz_deli = [ ]
 
-def line(x)
+def line(queue)
   line_queue=[ ]
-  if x.length >=1
+  if queue.length >=1
     x.each_with_index {|person,index|
       line_queue.push("#{index +1}. #{person}")}
       puts "The line is currently: #{line_queue.join(" ")}"
@@ -21,6 +21,6 @@ def now_serving(katz_deli)
     puts "Currently serving #{katz_deli[0]}."
     katz_deli.shift
   else 
-    return "There is nobody waiting to be served!"
+    puts "There is nobody waiting to be served!"
   end
 end
