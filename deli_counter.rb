@@ -1,11 +1,11 @@
 katz_deli = [ ]
 
 def line(queue)
-  line_queue=[ ]
+  waiting=[ ]
   if queue.length >=1
     queue.each_with_index {|human,index|
-      line_queue.push("#{index +1}. #{human}")}
-      puts "The line is currently: #{line_queue.join(" ")}"
+      waiting.push("#{index +1}. #{human}")}
+      puts "The line is currently: #{waiting.join(" ")}"
   else
     puts "The line is currently empty."
   end
