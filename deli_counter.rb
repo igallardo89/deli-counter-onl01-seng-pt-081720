@@ -1,13 +1,13 @@
 katz_deli = [ ]
 
-name = ["Ada", "Grace", "Kent", 'Martz']
-
-def line(queue)
-  customers = [ ]
-  if queue.lenght >=1 
-    queue.each_with_index{|human,index| customers.push("#{index}.#{human}")
- else
-  "The line is currently empty."
+def line(x)
+  line_queue=[]
+  if x.length >=1
+    x.each_with_index {|person,index|
+      line_queue.push("#{index +1}. #{person}")}
+      puts "The line is currently: #{line_queue.join(" ")}"
+  else
+    puts "The line is currently empty."
   end
 end
 
