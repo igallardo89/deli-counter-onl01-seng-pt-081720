@@ -5,7 +5,7 @@ name = ["Ada", "Grace", "Kent", 'Martz']
 def line(queue)
   customers = [ ]
   if queue.lenght >=1 
-    queue.each_with_index{|human,index| customers.push("#{index}.#{huma}")
+    queue.each_with_index{|human,index| customers.push("#{index}.#{human}")
  else
   "The line is currently empty."
   end
